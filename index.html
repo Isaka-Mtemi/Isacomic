@@ -2,42 +2,66 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ISACOMIC LOGISTICS | Import Export | Dar ↔️ China</title>
+<title>ISACOMIC LOGISTICS | Global Import Export | Dar ↔️ China</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="bg-[#f8fafc]">
 
-<nav class="bg-white sticky top-0 z-50 shadow-lg">
-<div class="max-w-7xl mx-auto px-4 py-3 flex justify-between">
-<div class="flex items-center gap-3"><div class="bg-blue-900 w-11 h-11 rounded-xl flex items-center justify-center text-white"><i class="fas fa-ship"></i></div><div><h1 class="font-black text-xl text-blue-950">ISACOMIC LOGISTICS</h1><p class="text-[10px] font-bold text-orange-500">GO & RETURN • SGR • HEAVY TRUCKS</p></div></div>
-<div class="flex gap-2"><a href="#tracking" class="bg-blue-950 text-white px-5 py-2 rounded-full text-xs font-bold">TRACK CARGO</a><a href="#quote" class="bg-yellow-400 text-blue-950 px-5 py-2 rounded-full font-black text-sm">GET QUOTE</a></div>
+<nav class="bg-white sticky top-0 z-50 shadow-xl border-b-4 border-yellow-400">
+<div class="max-w-7xl mx-auto px-4 py-4">
+<div class="flex justify-between items-center">
+<div class="flex items-center gap-4">
+<div class="bg-blue-950 w-14 h-14 rounded-2xl flex items-center justify-center text-white text-2xl"><i class="fas fa-ship"></i></div>
+<div>
+<h1 class="font-black text-3xl md:text-5xl leading-none text-blue-950 tracking-tighter">ISACOMIC LOGISTICS</h1>
+<p class="text-[11px] font-black tracking-[0.2em] text-orange-500 mt-1">GO & RETURN • GLOBAL LOGISTICS PARTNER</p>
+</div>
+</div>
+<div class="hidden md:flex gap-2"><a href="#services" class="bg-gray-100 px-5 py-2 rounded-full text-xs font-bold">SERVICES</a><a href="#tracking" class="bg-blue-950 text-white px-6 py-2.5 rounded-full text-xs font-black">TRACK CARGO</a></div>
+</div>
+<div class="mt-4 bg-gradient-to-r from-blue-950 via-blue-900 to-orange-600 rounded-2xl px-4 py-3 text-white text-center">
+<p class="text-[11px] md:text-[13px] font-bold tracking-wide">
+<span class="text-yellow-400">✦ YOUR GLOBAL PARTNER IN</span> IMPORT & EXPORT LOGISTICS ✦ SEA CARGO ✦ AIR CARGO ✦ HEAVY TRUCKS & SGR TRAIN ✦ CUSTOMS CLEARANCE (TRA/TBS) ✦ DOOR-TO-DOOR ✦ WAREHOUSING & STORAGE ✦ SUPPLY CHAIN & PORT OUTLET ✦ CARGO TRACKING ✦ SHOES, SPARE PARTS, PHONES, CLOTHES ✦
+</p>
+</div>
 </div>
 </nav>
 
 <section class="relative">
 <div class="absolute inset-0"><img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1600" class="w-full h-full object-cover"><div class="absolute inset-0 bg-blue-950/90"></div></div>
-<div class="relative max-w-7xl mx-auto px-4 py-14 grid lg:grid-cols-3 gap-6">
+<div class="relative max-w-7xl mx-auto px-4 py-16 grid lg:grid-cols-3 gap-8">
 <div class="lg:col-span-2 text-white">
-<h2 class="text-5xl font-black">Your Cargo<br><span class="text-yellow-400">Moving</span> Go & Return!</h2>
-<p class="mt-4">Shoes, spare parts, phones, clothes - SGR Train & Heavy Trucks!</p>
-<div class="mt-6 flex gap-3"><a href="#flow" class="bg-yellow-400 text-blue-950 px-8 py-3 rounded-full font-black">SEE FULL FLOW</a><a href="#operations" class="bg-white text-blue-900 px-8 py-3 rounded-full font-bold">OPERATIONS</a></div>
+<h2 class="text-5xl md:text-6xl font-black">Moving Your<br><span class="text-yellow-400">Business</span> Worldwide</h2>
+<div class="mt-6 flex flex-wrap gap-2 text-[11px] font-bold">
+<span class="bg-white/20 px-3 py-1.5 rounded-full">🚢 Sea Cargo 25-35 Days</span>
+<span class="bg-white/20 px-3 py-1.5 rounded-full">✈️ Air Cargo 7-10 Days</span>
+<span class="bg-yellow-400 text-blue-950 px-3 py-1.5 rounded-full">🚚 Heavy Trucks + SGR</span>
+</div>
+<div class="mt-8 flex gap-3"><a href="#flow" class="bg-yellow-400 text-blue-950 px-8 py-4 rounded-full font-black">EXPLORE FLOW</a><a href="#services" class="bg-white text-blue-900 px-8 py-4 rounded-full font-bold">OUR SERVICES</a></div>
 </div>
 <div id="tracking" class="bg-white rounded-3xl p-6 shadow-2xl">
-<h3 class="font-black">📍 Track Your Cargo - LIVE FROM CHINA</h3>
+<h3 class="font-black text-blue-950">📍 Live Cargo Tracking</h3>
 <img src="https://images.unsplash.com/photo-1494412651409-8963ce7935b4?w=600" class="w-full h-28 object-cover rounded-xl my-3">
-<div class="flex gap-2"><input id="trackInput" placeholder="ISAC-001" class="flex-1 border-2 border-blue-900 rounded-full px-5 py-3 font-black uppercase"><button onclick="trackCargo()" class="bg-blue-900 text-white px-6 rounded-full font-black">TRACK</button></div>
+<div class="flex gap-2"><input id="trackInput" placeholder="ISAC-001" class="flex-1 border-2 border-blue-900 rounded-full px-5 py-3 font-black uppercase"><button onclick="trackCargo()" class="bg-blue-950 text-white px-6 rounded-full font-black">TRACK</button></div>
 <div id="result" class="hidden mt-4"></div>
 </div>
 </div>
 </section>
 
-<section id="operations" class="py-12 px-4 bg-white">
-<h3 class="font-black text-3xl text-center text-blue-950">🚚🚆 Inland Transportation - Heavy Trucks & SGR Train</h3>
-<div class="grid md:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto">
-<div class="rounded-2xl overflow-hidden shadow-xl"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800" class="h-48 w-full object-cover"><div class="p-5"><h4 class="font-black">Heavy Trucks - Containers</h4><p class="text-xs">20ft & 40ft Dar → Mwanza, Arusha, Mbeya</p></div></div>
-<div class="rounded-2xl overflow-hidden shadow-xl"><img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?w=800" class="h-48 w-full object-cover"><div class="p-5"><h4 class="font-black">SGR Train - Standard Gauge</h4><p class="text-xs">SGR containers Dar → Dodoma - fast!</p></div></div>
-<div class="rounded-2xl overflow-hidden shadow-xl"><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800" class="h-48 w-full object-cover"><div class="p-5"><h4 class="font-black">Inbound Warehouse - Port</h4><p class="text-xs">Cargo in port warehouses</p></div></div>
+<section id="services" class="py-14 px-4 bg-white">
+<div class="max-w-7xl mx-auto text-center">
+<h3 class="font-black text-4xl text-blue-950">Our Comprehensive Logistics Services</h3>
+<div class="grid md:grid-cols-4 gap-4 mt-10 text-left">
+<div class="bg-[#f8fafc] rounded-2xl p-5 border-t-4 border-blue-900"><h4 class="font-black text-sm">Sea Cargo - Go & Return</h4><p class="text-xs text-gray-600">Dar ↔️ China 25-35 days</p></div>
+<div class="bg-[#f8fafc] rounded-2xl p-5 border-t-4 border-sky-500"><h4 class="font-black text-sm">Air Cargo - Express</h4><p class="text-xs text-gray-600">7-10 days urgent</p></div>
+<div class="bg-[#f8fafc] rounded-2xl p-5 border-t-4 border-yellow-400"><h4 class="font-black text-sm">Cargo Consolidation</h4><p class="text-xs text-gray-600">Yiwu, Guangzhou, Shenzhen</p></div>
+<div class="bg-[#f8fafc] rounded-2xl p-5 border-t-4 border-green-500"><h4 class="font-black text-sm">Door-to-Door Delivery</h4><p class="text-xs text-gray-600">To your home/shop</p></div>
+<div class="bg-[#f8fafc] rounded-2xl p-5 border-t-4 border-purple-600"><h4 class="font-black text-sm">Customs Clearance - TRA/TBS</h4><p class="text-xs text-gray-600">TRA, TBS, Port Outlet</p></div>
+<div class="bg-[#f8fafc] rounded-2xl p-5 border-t-4 border-orange-500"><h4 class="font-black text-sm">Inland - Heavy Trucks & SGR</h4><p class="text-xs text-gray-600">Out of Dar Port</p></div>
+<div class="bg-[#f8fafc] rounded-2xl p-5 border-t-4 border-red-500"><h4 class="font-black text-sm">Warehousing & Storage</h4><p class="text-xs text-gray-600">Ilala Bungoni & Kariakoo</p></div>
+<div class="bg-blue-950 text-white rounded-2xl p-5"><h4 class="font-black text-sm">Supply Chain & Tracking</h4><p class="text-xs text-blue-200">Tracking China→TZ</p></div>
+</div>
 </div>
 </section>
 
@@ -45,67 +69,28 @@
 <div class="grid lg:grid-cols-2 gap-8">
 <div class="bg-white rounded-3xl shadow-xl p-7 border-t-8 border-green-500">
 <h3 class="font-black text-xl"><span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">IMPORT</span> China → Tanzania</h3>
-<div class="mt-6 space-y-3 text-sm">
-<p>1. Supplier - Shoes, spare parts, phones, clothes</p>
-<p>2. China Warehouse & Consolidation</p>
-<p>3. Sea / Air - Vessel Voyage</p>
-<p class="bg-orange-50 border-2 border-orange-200 p-3 rounded-xl"><b>4. CLEARANCE - TRA / TBS / Port Outlet</b><br><b>Stakeholders:</b> TRA, TBS, Port, Shipping Line</p>
-<p>5. Inland - Heavy Trucks & SGR Train</p>
-<p class="bg-green-100 border-2 border-green-500 p-3 rounded-xl font-bold">6. DOOR-TO-DOOR - To Your Home! + Storage Ilala & Kariakoo</p>
-</div>
+<div class="mt-6 space-y-2 text-sm"><p>1. Supplier - Shoes, Spare Parts, Phones, Clothes</p><p>2. China Warehouse</p><p>3. Sea/Air Voyage</p><p class="bg-orange-50 border-2 border-orange-200 p-3 rounded-xl"><b>4. Clearance - TRA/TBS/Port Outlet</b><br>Stakeholders: TRA, TBS, Port</p><p>5. Inland - Heavy Trucks & SGR</p><p class="bg-green-100 border-2 border-green-500 p-3 rounded-xl font-bold">6. Door-to-Door + Storage</p></div>
 </div>
 <div class="bg-blue-950 rounded-3xl shadow-xl p-7 text-white">
-<h3 class="font-black text-xl"><span class="bg-yellow-400 text-blue-950 px-3 py-1 rounded-full text-sm">EXPORT</span> Tanzania → China (RETURN)</h3>
-<div class="mt-6 space-y-3 text-sm">
-<p>1. Pickup Dar - Ilala Bungoni / Kariakoo</p>
-<p>2. Clearance TZ - TRA Export</p>
-<p>3. Vessel Dar → China</p>
-<p>4. China Warehouse & Delivery</p>
+<h3 class="font-black text-xl"><span class="bg-yellow-400 text-blue-950 px-3 py-1 rounded-full text-sm">EXPORT</span> Tanzania → China</h3>
+<div class="mt-6 space-y-3 text-sm"><p>1. Pickup Dar</p><p>2. Clearance TRA Export</p><p>3. Vessel Dar → China</p><p>4. China Warehouse</p></div>
 </div>
-</div>
-</div>
-</section>
-
-<section class="py-12 px-4 bg-blue-950 text-white">
-<h3 class="font-black text-3xl text-center">📦 Services - Business Goods, Supply Chain & Storage</h3>
-<div class="grid md:grid-cols-3 gap-6 mt-8 max-w-7xl mx-auto">
-<div class="bg-white text-gray-900 rounded-2xl p-6"><h4 class="font-black">Cargo Transportation</h4><p class="text-sm mt-2">Shoes, Clothes, Phones, Spare Parts</p></div>
-<div class="bg-yellow-400 text-blue-950 rounded-2xl p-6"><h4 class="font-black">Supply Chain (Port Outlet)</h4><p class="text-sm">Supplier coordination, Consolidation, Port outlet</p></div>
-<div class="bg-white text-gray-900 rounded-2xl p-6 border-4 border-green-400"><h4 class="font-black">Storage - Affordable!</h4><p class="text-sm font-bold text-green-700">Ilala Bungoni & Kariakoo</p></div>
-</div>
-</section>
-
-<section class="py-10 px-4 max-w-7xl mx-auto">
-<div class="bg-white rounded-3xl shadow-xl p-8 max-w-3xl mx-auto">
-<h4 class="font-black text-2xl text-center text-blue-950">💰 Request a Quotation</h4>
-<form id="quote" onsubmit="sendQuote(event)" class="grid md:grid-cols-2 gap-3 mt-6">
-<input id="qName" required placeholder="Your Name" class="px-4 py-3 rounded-xl border">
-<input id="qPhone" required placeholder="Phone Number" class="px-4 py-3 rounded-xl border">
-<input id="qGoods" placeholder="Cargo Type: shoes/spare parts/phones/clothes" class="md:col-span-2 px-4 py-3 rounded-xl border">
-<button class="md:col-span-2 bg-blue-900 text-white py-4 rounded-full font-black">SEND VIA WHATSAPP</button>
-</form>
 </div>
 </section>
 
 <footer class="bg-[#0f172a] text-white">
 <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
-<div><h4 class="font-black text-yellow-400">ISACOMIC LOGISTICS</h4><p class="text-sm text-gray-400 mt-2">Professional logistics Go & Return - China ↔️ Tanzania.</p></div>
-<div><h5 class="font-bold mb-3">Services</h5><ul class="text-sm text-gray-400 space-y-1"><li>Sea Cargo</li><li>Air Cargo</li><li>Heavy Trucks & SGR</li><li>Customs (TRA/TBS)</li><li>Door-to-Door</li><li>Storage Ilala & Kariakoo</li></ul></div>
-<div><h5 class="font-bold mb-3">Operations</h5><ul class="text-sm text-gray-400 space-y-1"><li>Loading & Unloading at Port</li><li>Inbound Warehouse</li><li>SGR Train</li><li>Supply Chain & Port Outlet</li><li>Cargo Tracking</li></ul></div>
-<div><h5 class="font-bold text-yellow-400 mb-3">📞 Contact Us</h5><div class="text-sm space-y-2">
-<p class="bg-green-600 p-3 rounded-xl"><i class="fab fa-whatsapp"></i> WhatsApp: +255 628 361 722</p>
-<p class="bg-blue-900 p-3 rounded-xl"><i class="fas fa-phone"></i> Call: +255 618 612 488</p>
-<p class="bg-gray-800 p-3 rounded-xl"><i class="fas fa-envelope"></i> isaacmtemi08@gmail.com</p>
-<p class="text-xs text-gray-400">Dar: Ilala Bungoni & Kariakoo<br>China: Guangzhou & Yiwu</p>
-</div></div>
+<div><h4 class="font-black text-yellow-400 text-xl">ISACOMIC LOGISTICS</h4><p class="text-sm text-gray-400 mt-2">Go & Return Global Logistics</p></div>
+<div><h5 class="font-bold mb-3">Services</h5><ul class="text-sm text-gray-400 space-y-1"><li>Sea & Air Cargo</li><li>Heavy Trucks & SGR</li><li>Customs TRA/TBS</li><li>Storage Ilala & Kariakoo</li></ul></div>
+<div><h5 class="font-bold mb-3">Flow</h5><ul class="text-sm text-gray-400 space-y-1"><li>Import & Export Flow</li><li>Clearance Process</li><li>Cargo Tracking</li></ul></div>
+<div><h5 class="font-bold text-yellow-400 mb-3">Contact Us</h5><div class="text-sm space-y-2"><p class="bg-green-600 p-3 rounded-xl">WhatsApp: +255 628 361 722</p><p class="bg-blue-900 p-3 rounded-xl">Call: +255 618 612 488</p><p class="bg-gray-800 p-3 rounded-xl">Email: isaacmtemi08@gmail.com</p><p class="text-xs text-gray-400">Ilala Bungoni & Kariakoo, Dar | Guangzhou & Yiwu</p></div></div>
 </div>
 <div class="border-t border-gray-800 py-4 text-center text-xs text-gray-500">© 2026 ISACOMIC LOGISTICS | isacomic.vercel.app</div>
 </footer>
 
 <script>
 let trackingData=[{TrackingNo:"ISAC-001",Status:"China Warehouse ✓"},{TrackingNo:"ISAC-002",Status:"Vessel + SGR Train"},{TrackingNo:"ISAC-003",Status:"Dar Port - TRA Clearance"},{TrackingNo:"ISAC-004",Status:"Heavy Truck - Delivery!"}];
-function trackCargo(){const i=document.getElementById('trackInput').value.trim().toUpperCase();const el=document.getElementById('result');if(!i){el.className='mt-4 bg-red-50 p-3 rounded-xl';el.innerHTML='Enter Tracking!';el.classList.remove('hidden');return;}const f=trackingData.find(d=>d.TrackingNo===i);if(f){el.className='mt-4 bg-green-50 border-2 border-green-500 p-4 rounded-xl';el.innerHTML=<b>${f.TrackingNo}</b><br><span class="font-black text-green-700">${f.Status}</span>;}else{el.className='mt-4 bg-yellow-50 border-2 border-yellow-400 p-4 rounded-xl';el.innerHTML=${i} not found. WhatsApp +255628361722;}el.classList.remove('hidden');}
-function sendQuote(e){e.preventDefault();const n=document.getElementById('qName').value;const p=document.getElementById('qPhone').value;const g=document.getElementById('qGoods').value;const txt=Hello ISACOMIC LOGISTICS%0AName: ${n}%0APhone: ${p}%0ACargo: ${g};window.open(https://wa.me/255628361722?text=${txt},'_blank');}
+function trackCargo(){const i=document.getElementById('trackInput').value.trim().toUpperCase();const el=document.getElementById('result');if(!i){el.className='mt-4 bg-red-50 p-3 rounded-xl';el.innerHTML='Enter Tracking!';el.classList.remove('hidden');return;}const f=trackingData.find(d=>d.TrackingNo===i);if(f){el.className='mt-4 bg-green-50 border-2 border-green-500 p-4 rounded-xl';el.innerHTML=<b>${f.TrackingNo}</b><br><span class="font-black text-green-700">${f.Status}</span>;}else{el.className='mt-4 bg-yellow-50 border-2 border-yellow-400 p-4 rounded-xl';el.innerHTML=${i} not found.;}el.classList.remove('hidden');}
 </script>
 </body>
 </html>
